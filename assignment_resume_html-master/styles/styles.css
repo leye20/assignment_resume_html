@@ -1,25 +1,37 @@
 html {
-    background-color: lightcyan;
-    font-family: Open Sans Condensed, Slabo, Verdana, Geneva, Tahoma, sans-serif;
+    background-color: hsl(180, 100%, 94%);
+    font-family: "crimson", "Open Sans", Verdana, "Geneva", Tahoma, sans-serif;
     /* background-image: url(../image/transparent-background-water-bubble-png-images-bubbles-vector-png-260_260.png); */
     background-repeat: no-repeat;
     background-size: 100%;
 }
+head{
+    background-origin: padding-box;
+}
 
 h1 {
-    /* text-align: center; */
+    text-align: center;
+    font-weight: bold;
     /* font-size: 60px; */
 }
 h2 {
-    /* text-align: justify; */
+    text-align: justify;
     /* font-style: italic; */
     /* font-size: 20px; */
     /* margin: 20px, 20px, 20px, auto; */
 }
-h3{
+
+h4{
     /* text-align: left; */
     /* font-style: oblique; */
-    /* font-size: 20px; */
+    font-size: 15px;
+}
+h5{
+    font-size: 12px;
+}
+h6{
+    font-size: 15px;
+    font-weight: bold;
 }
 .leftCol{
     float:left;
@@ -36,16 +48,14 @@ h3{
 }
 ul{
     display: block;
-    list-style-type: disc;
+    list-style-type: circle;
     margin-top: 1em;
     margin-bottom: 1 em;
     margin-left: 0;
     margin-right: 0;
     padding-left: 40px;
 }
-h6{
-    
-}
+
 /* .job1{
     width: 30%;
     float: right;
@@ -58,17 +68,60 @@ p{
     /* text-align: center; */
     font-size: 12px;
 }
-/* /
+.unordered{
+    padding-left:15%;
+}
+
+nav {
+    background: #55d6aa;
+}
+  
+nav::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
 nav a{
-    margin: 0 20%;
-    float: left;
-    width: 25%;
+    display: inline-block;
+    margin-right: 70px;
+    padding-top: 30px;
+    
+    position: relative;
+}
+
+nav a{
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+nav a:hover{
+    color: #000;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+  
+    position: absolute;
+    top: 10%;
+    width: 0%;
+  
+    transition: all ease-in-out 300ms;
+}
+  
+nav a:hover::before {
+    width: 100%;
 }
 /* /
 header {
     background-color: azure;
     position: fixed;
-    top: 0;
+    top:  0;
     width: 100%;
     z-index: 1000;
 }
@@ -86,4 +139,24 @@ aside {
     background-color: aqua;
     position: relative;
     top: 50px;
+}
+*/
+body{
+    margin: 10px;
+    padding: 5px;
+}
+.ft {
+    position: fixed;
+    display: inline-block;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: auto;
+    color: darkgrey;
+    text-align: center;
+    background-color: deepskyblue;
+    padding: 5px;
+}
+.ft a{
+    color: black;
 }
